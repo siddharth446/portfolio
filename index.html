@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Siddharth Khanna - Flutter Full-Stack Engineer, Cross-Platform Expert specializing in Netflix-grade applications">
+    <meta name="keywords" content="Flutter Developer, Full Stack Engineer, Cross-Platform Development, Mobile Apps, Web Development">
+    <meta name="author" content="Siddharth Khanna">
+    <title>Siddharth Khanna | Flutter Full-Stack Engineer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">&lt;SK/&gt;</span>
+                <span class="brand-name">Siddharth Khanna</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge fade-in">
+                    <i class="fas fa-code"></i>
+                    <span>Full-Stack Engineer</span>
+                </div>
+                <h1 class="hero-title fade-in-up">
+                    Hi, I'm <span class="gradient-text">Siddharth Khanna</span>
+                </h1>
+                <h2 class="hero-subtitle fade-in-up">
+                    Flutter Full-Stack Engineer | Cross-Platform Expert | Building Netflix-Grade Apps
+                </h2>
+                <p class="hero-description fade-in-up">
+                    Specialized in crafting scalable, production-ready applications across 7 platforms. 
+                    <br>12+ deployed apps • Self-taught expert • Clean Architecture advocate
+                </p>
+                <div class="hero-location fade-in-up">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Saharanpur, Uttar Pradesh, India</span>
+                </div>
+                <div class="hero-buttons fade-in-up">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Contact Me
+                    </a>
+                    <a href="#" class="btn btn-outline" id="downloadResume">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+                <div class="hero-stats fade-in-up">
+                    <div class="stat-item">
+                        <div class="stat-number">12+</div>
+                        <div class="stat-label">Production Apps</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Platforms</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">Top 5</div>
+                        <div class="stat-label">Hackathon Winner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-subtitle">Crafting Excellence Across Platforms</div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a <strong>self-taught Flutter Full-Stack Engineer</strong> who went from beginner to 
+                        building production-grade Netflix clones in just <strong>8 months</strong>. My journey 
+                        demonstrates rapid learning, dedication, and a passion for creating exceptional user experiences.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="highlight-content">
+                                <h4>Cross-Platform Mastery</h4>
+                                <p>Expertise in developing for Android, iOS, Web, Windows, macOS, Linux, and Embedded systems using Flutter's unified codebase.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-layer-group"></i>
+                            <div class="highlight-content">
+                                <h4>Clean Architecture Advocate</h4>
+                                <p>Implementing scalable solutions with Clean Architecture, MVVM, and Repository patterns, ensuring maintainable and testable code.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <div class="highlight-content">
+                                <h4>Rapid Delivery Expert</h4>
+                                <p>Built a complete Netflix clone with offline downloads and realtime sync across all devices in just 10 days.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-server"></i>
+                            <div class="highlight-content">
+                                <h4>Full-Stack Capabilities</h4>
+                                <p>Proficient in modern backend technologies including Appwrite, Firebase, Supabase, with REST, GraphQL, and WebSocket expertise.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Building scalable cross-platform applications isn't just my profession—it's my passion. 
+                        Every line of code is an opportunity to create something remarkable."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section class="featured-project section">
+        <div class="container">
+            <div class="section-header">
+                <div class="featured-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Featured Project</span>
+                </div>
+                <h2 class="section-title">MoviesHub - Netflix Clone</h2>
+                <div class="section-subtitle">Complete Streaming Platform Built in 10 Days</div>
+            </div>
+            <div class="featured-content">
+                <div class="featured-image">
+                    <div class="project-showcase">
+                        <div class="showcase-mockup">
+                            <i class="fas fa-film"></i>
+                            <div class="mockup-details">
+                                <span class="detail-item"><i class="fas fa-check-circle"></i> 50,000+ Movies</span>
+                                <span class="detail-item"><i class="fas fa-check-circle"></i> Offline Downloads</span>
+                                <span class="detail-item"><i class="fas fa-check-circle"></i> 7 Platforms</span>
+                                <span class="detail-item"><i class="fas fa-check-circle"></i> Realtime Sync</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-details">
+                    <h3>Full Cross-Platform Streaming Experience</h3>
+                    <p class="project-description">
+                        A production-grade Netflix clone demonstrating advanced Flutter capabilities and 
+                        full-stack development expertise. Built from scratch in under 10 days, featuring 
+                        complete backend integration with Appwrite Cloud.
+                    </p>
+                    
+                    <div class="feature-list">
+                        <h4><i class="fas fa-sparkles"></i> Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> <strong>Cross-Platform:</strong> Android, iOS, Web, Windows, macOS, Linux - one codebase</li>
+                            <li><i class="fas fa-check"></i> <strong>TMDB Integration:</strong> 50,000+ real movies with posters, trailers, ratings, and genres</li>
+                            <li><i class="fas fa-check"></i> <strong>Advanced Video Player:</strong> Resume playback, quality selection, subtitle support</li>
+                            <li><i class="fas fa-check"></i> <strong>Offline Downloads:</strong> Download videos + metadata using isolates for background processing</li>
+                            <li><i class="fas fa-check"></i> <strong>Realtime Sync:</strong> Continue Watching, Watchlist, and Likes sync across all devices</li>
+                            <li><i class="fas fa-check"></i> <strong>Authentication:</strong> Google, Email/Password, and Anonymous login with session management</li>
+                            <li><i class="fas fa-check"></i> <strong>Responsive UI:</strong> Adaptive layouts for phones, tablets, desktops, and web browsers</li>
+                            <li><i class="fas fa-check"></i> <strong>Premium UX:</strong> Hero animations, shimmer loading, pull-to-refresh, deep linking</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">
+                        <h4><i class="fas fa-code"></i> Technology Stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Appwrite Cloud</span>
+                            <span class="tech-tag">TMDB API</span>
+                            <span class="tech-tag">Riverpod 2.5</span>
+                            <span class="tech-tag">Clean Architecture</span>
+                            <span class="tech-tag">Better Player</span>
+                            <span class="tech-tag">Hive</span>
+                            <span class="tech-tag">Isolates</span>
+                            <span class="tech-tag">Dependency Injection</span>
+                        </div>
+                    </div>
+
+                    <div class="project-metrics">
+                        <div class="metric-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span class="metric-value">10 Days</span>
+                            <span class="metric-label">Development Time</span>
+                        </div>
+                        <div class="metric-item">
+                            <i class="fas fa-desktop"></i>
+                            <span class="metric-value">7 Platforms</span>
+                            <span class="metric-label">Supported</span>
+                        </div>
+                        <div class="metric-item">
+                            <i class="fas fa-film"></i>
+                            <span class="metric-value">50,000+</span>
+                            <span class="metric-label">Movies Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Other Major Projects</h2>
+                <div class="section-subtitle">Diverse Portfolio of Production-Ready Applications</div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: PicShine AI -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="project-title">PicShine AI</h3>
+                    <p class="project-description">
+                        AI-powered photo enhancement web application leveraging Google Gemini for 
+                        intelligent image processing and Cloudinary for optimized storage and delivery.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Google Gemini</span>
+                        <span class="tech-badge">Cloudinary</span>
+                        <span class="tech-badge">Web App</span>
+                        <span class="tech-badge">AI/ML</span>
+                    </div>
+                    <div class="project-features">
+                        <span><i class="fas fa-check-circle"></i> AI Image Enhancement</span>
+                        <span><i class="fas fa-check-circle"></i> Cloud Processing</span>
+                        <span><i class="fas fa-check-circle"></i> Real-time Results</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: IndiaStream -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3 class="project-title">IndiaStream</h3>
+                    <p class="project-description">
+                        Complete OTT platform inspired by Hotstar and JioCinema, featuring live TV channels 
+                        with real-time streaming capabilities and interactive user experience.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Socket.io</span>
+                        <span class="tech-badge">WebSockets</span>
+                    </div>
+                    <div class="project-features">
+                        <span><i class="fas fa-check-circle"></i> Live TV Channels</span>
+                        <span><i class="fas fa-check-circle"></i> Real-time Streaming</span>
+                        <span><i class="fas fa-check-circle"></i> Interactive UI</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: AutoDrop -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="project-title">AutoDrop</h3>
+                    <p class="project-description">
+                        Fully automated dropshipping system integrating Alibaba API with Selenium bots 
+                        for product sourcing, pricing, and order management automation.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Selenium</span>
+                        <span class="tech-badge">Alibaba API</span>
+                        <span class="tech-badge">Automation</span>
+                    </div>
+                    <div class="project-features">
+                        <span><i class="fas fa-check-circle"></i> Full Automation</span>
+                        <span><i class="fas fa-check-circle"></i> API Integration</span>
+                        <span><i class="fas fa-check-circle"></i> Order Management</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: MooseHub -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="project-title">MooseHub</h3>
+                    <p class="project-description">
+                        Complete campus social network application with real-time chat, event management, 
+                        and marketplace features designed for 50,000+ potential users.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">Real-time Chat</span>
+                        <span class="tech-badge">Social Network</span>
+                    </div>
+                    <div class="project-features">
+                        <span><i class="fas fa-check-circle"></i> 50k+ User Scale</span>
+                        <span><i class="fas fa-check-circle"></i> Chat & Events</span>
+                        <span><i class="fas fa-check-circle"></i> Marketplace</span>
+                    </div>
+                </div>
+
+                <!-- Project 5: E-commerce Clone -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="project-title">E-commerce Clone</h3>
+                    <p class="project-description">
+                        Amazon-style e-commerce application featuring complete payment gateway integration, 
+                        shopping cart, wishlist, and order management system.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">Razorpay</span>
+                        <span class="tech-badge">Stripe</span>
+                        <span class="tech-badge">REST API</span>
+                    </div>
+                    <div class="project-features">
+                        <span><i class="fas fa-check-circle"></i> Payment Gateway</span>
+                        <span><i class="fas fa-check-circle"></i> Cart & Wishlist</span>
+                        <span><i class="fas fa-check-circle"></i> Order Tracking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-subtitle">Comprehensive Full-Stack Expertise</div>
+            </div>
+            <div class="skills-content">
+                <!-- Flutter & Mobile -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Flutter & Cross-Platform</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Flutter (Mobile, Web, Desktop)</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Dart Language</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Custom Painters & Animations</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Platform Channels & Isolates</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- State Management -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>State Management</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">Riverpod 2.5</span>
+                        <span class="skill-tag expert">Bloc Pattern</span>
+                        <span class="skill-tag advanced">Provider</span>
+                        <span class="skill-tag advanced">GetX</span>
+                    </div>
+                </div>
+
+                <!-- Backend & Cloud -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend & Cloud Services</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">Appwrite Cloud</span>
+                        <span class="skill-tag expert">Firebase</span>
+                        <span class="skill-tag advanced">Supabase</span>
+                        <span class="skill-tag advanced">REST APIs</span>
+                        <span class="skill-tag advanced">GraphQL</span>
+                        <span class="skill-tag advanced">WebSockets</span>
+                    </div>
+                </div>
+
+                <!-- Architecture -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-cubes"></i>
+                        <h3>Architecture & Patterns</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">Clean Architecture</span>
+                        <span class="skill-tag expert">MVVM</span>
+                        <span class="skill-tag expert">Repository Pattern</span>
+                        <span class="skill-tag expert">Dependency Injection</span>
+                        <span class="skill-tag expert">Null Safety</span>
+                    </div>
+                </div>
+
+                <!-- Other Technologies -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Other Technologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag advanced">Python (FastAPI)</span>
+                        <span class="skill-tag advanced">Node.js</span>
+                        <span class="skill-tag intermediate">C++</span>
+                        <span class="skill-tag intermediate">Java</span>
+                        <span class="skill-tag advanced">React</span>
+                        <span class="skill-tag advanced">Selenium</span>
+                    </div>
+                </div>
+
+                <!-- Tools & DevOps -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & DevOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">Git/GitHub</span>
+                        <span class="skill-tag advanced">Figma</span>
+                        <span class="skill-tag advanced">Postman</span>
+                        <span class="skill-tag intermediate">Docker</span>
+                        <span class="skill-tag intermediate">CI/CD</span>
+                    </div>
+                </div>
+
+                <!-- Payment & APIs -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-plug"></i>
+                        <h3>APIs & Integrations</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag advanced">TMDB API</span>
+                        <span class="skill-tag advanced">Razorpay</span>
+                        <span class="skill-tag advanced">Stripe</span>
+                        <span class="skill-tag advanced">Google Gemini</span>
+                        <span class="skill-tag advanced">Cloudinary</span>
+                        <span class="skill-tag advanced">Alibaba API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Achievements</h2>
+                <div class="section-subtitle">Milestones & Recognition</div>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Hackathon Winner</h3>
+                    <p>Top 5 out of 800+ participants in Masai x10x Hackathon Edition #3</p>
+                    <div class="achievement-badge">🏆 Winner</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Rapid Development</h3>
+                    <p>Built complete Netflix clone with offline downloads in just 10 days</p>
+                    <div class="achievement-badge">⚡ Fast Delivery</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Production Apps</h3>
+                    <p>12+ production-ready applications deployed with live backends</p>
+                    <div class="achievement-badge">🚀 Deployed</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Self-Taught Expert</h3>
+                    <p>Mastered Flutter ecosystem from beginner to Netflix-clone in 8 months</p>
+                    <div class="achievement-badge">📚 Rapid Learning</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Cloud Deployment</h3>
+                    <p>Successfully managed full backend deployment on Appwrite Cloud (Frankfurt)</p>
+                    <div class="achievement-badge">☁️ Cloud Pro</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Bootcamp Graduate</h3>
+                    <p>Completed Masai School Full Stack Web + Flutter Bootcamp (x10x Cohort)</p>
+                    <div class="achievement-badge">🎓 Certified</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="section-subtitle">Professional Journey</div>
+            </div>
+            <div class="timeline">
+                <!-- Experience Item -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Development Intern</h3>
+                            <span class="timeline-company">Windows Software</span>
+                            <span class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                June 2025 - July 2025
+                            </span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Developed internal desktop automation tools using C++ and Python</li>
+                            <li>Worked on Windows APIs, services debugging and performance optimization</li>
+                            <li>Built CLI tools for team productivity improvement</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-pill">C++</span>
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Windows API</span>
+                            <span class="tech-pill">CLI Tools</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Full Stack Web + Flutter Bootcamp</h3>
+                            <span class="timeline-company">Masai School</span>
+                            <span class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                Graduated 2025 (x10x Cohort)
+                            </span>
+                        </div>
+                        <p class="timeline-description">
+                            Intensive full-stack development bootcamp covering modern web technologies, 
+                            Flutter cross-platform development, and software engineering best practices.
+                        </p>
+                        <div class="timeline-achievements">
+                            <span><i class="fas fa-star"></i> x10x Elite Cohort Graduate</span>
+                            <span><i class="fas fa-trophy"></i> Hackathon Winner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>B.Sc Information Technology</h3>
+                            <span class="timeline-company">University (Details to be added)</span>
+                            <span class="timeline-date">
+                                <i class="fas fa-calendar"></i>
+                                2022 - 2025
+                            </span>
+                        </div>
+                        <p class="timeline-description">
+                            Comprehensive study of information technology, computer science fundamentals, 
+                            and modern software development practices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-subtitle">Ready to Build Something Amazing Together?</div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <p>
+                            I'm always interested in hearing about new projects, opportunities, and collaborations. 
+                            Whether you're looking to build a cross-platform app, need consultation on Flutter architecture, 
+                            or just want to connect, feel free to reach out!
+                        </p>
+                    </div>
+                    <div class="contact-methods">
+                        <a href="mailto:siddharthkhanna542@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <span>siddharthkhanna542@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+918968321566" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Phone</h4>
+                                <span>+91 89683 21566</span>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Location</h4>
+                                <span>Saharanpur, Uttar Pradesh, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link github" title="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-link linkedin" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link twitter" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="mailto:siddharthkhanna542@gmail.com" class="social-link email" title="Email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <span class="brand-icon">&lt;SK/&gt;</span>
+                    </div>
+                    <p class="brand-tagline">
+                        Building exceptional cross-platform experiences, one line of code at a time.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="mailto:siddharthkhanna542@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Siddharth Khanna. All rights reserved.</p>
+                <p class="footer-note">Designed & Developed with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
