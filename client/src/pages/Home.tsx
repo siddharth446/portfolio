@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Download, Github, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { Download, Github, Linkedin, Mail, ExternalLink, Award, BookOpen } from "lucide-react";
 import { useState } from "react";
 
 export default function Home() {
@@ -50,6 +50,59 @@ export default function Home() {
       highlights: ["4x resolution upscaling", "50% faster rendering", "Batch processing"],
       link: "https://github.com/siddharth446/picshine-ai",
     },
+  ];
+
+  const educationData = [
+    {
+      title: "Full-Stack Development Bootcamp",
+      institution: "Masai School (in collaboration with IIT Guwahati)",
+      date: "Dec 2025",
+      highlights: [
+        "Intensive 10x Cohort program specializing in Flutter, full-stack development, AI integration",
+        "Achieved CGPA: 6.9/10; Focused on Clean Architecture, MVVM, and real-time AI APIs",
+        "Completed capstone projects simulating industry scenarios"
+      ]
+    },
+    {
+      title: "Senior Secondary (Class 12th - Science Stream)",
+      institution: "National Institute of Open Schooling (NIOS)",
+      date: "Apr 2025",
+      highlights: [
+        "Subjects: English (59%), Chemistry (86%), Painting (73%), Mathematics (64%), Physics (62%)",
+        "Overall Result: Pass; Strong analytical skills in Physics and Chemistry",
+        "Equivalent to U.S. High School Diploma"
+      ]
+    },
+    {
+      title: "Class 11th (Science - Mathematics)",
+      institution: "Shemford Futuristic School, Baran (CBSE Affiliated)",
+      date: "Mar 2023",
+      highlights: [
+        "Marks: Physics (97/100), Chemistry (91/100), Mathematics (90/100), English (90/100)",
+        "Promoted to Class 12th with A grades in Co-Scholastic Areas",
+        "Excelled in STEM subjects with strong conceptual understanding"
+      ]
+    },
+    {
+      title: "High School (Class 10th)",
+      institution: "Uttar Pradesh Madhyamik Shiksha Parishad (UP Board)",
+      date: "Jun 2022",
+      highlights: [
+        "Marks: Hindi (74% B1), English (78% B1), Science (71% B1), Drawing (83% A2)",
+        "Overall: First Division (Certificate No. 1964440)",
+        "Developed foundational skills in logical reasoning and creative expression"
+      ]
+    },
+    {
+      title: "Class 9th",
+      institution: "2021–2022",
+      date: "Completed",
+      highlights: [
+        "Achieved high marks in Hindi (81%), English (81%), Social Science (81%), Science (82%)",
+        "Focused on continuous assessment and practical projects",
+        "Fostered resilience and self-directed learning"
+      ]
+    }
   ];
 
   const downloadPDF = () => {
@@ -278,30 +331,66 @@ export default function Home() {
 
       {/* Education Section */}
       <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center">Education</h2>
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <BookOpen className="text-blue-400" size={32} />
+            <h2 className="text-4xl font-bold text-white">Education</h2>
+          </div>
+          <p className="text-slate-300 text-center mb-12 max-w-2xl mx-auto">
+            Complete educational background from bootcamp to high school
+          </p>
 
-          <div className="space-y-6">
-            <Card className="bg-slate-700/50 border-slate-600 p-6">
-              <h3 className="text-xl font-bold text-white mb-2">Full-Stack Development Bootcamp</h3>
-              <p className="text-blue-400 font-medium mb-2">Masai School (in collaboration with IIT Guwahati)</p>
-              <p className="text-slate-400 text-sm mb-3">Graduated: December 2025</p>
-              <ul className="space-y-2 text-slate-300 text-sm">
-                <li className="flex gap-2">
-                  <span className="text-blue-400">•</span>
-                  <span>Specialized in Flutter, AI integration, and production-grade deployment</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-blue-400">•</span>
-                  <span>CGPA: 6.9/10; Focused on Clean Architecture and MVVM patterns</span>
-                </li>
-              </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {educationData.map((edu, idx) => (
+              <Card
+                key={idx}
+                className="bg-slate-700/50 border-slate-600 hover:border-blue-500 transition-all duration-300 p-6 hover:shadow-lg hover:shadow-blue-500/20"
+              >
+                <div className="flex items-start gap-3 mb-3">
+                  <Award className="text-blue-400 flex-shrink-0 mt-1" size={20} />
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-white">{edu.title}</h3>
+                    <p className="text-blue-400 text-sm font-medium">{edu.institution}</p>
+                    <p className="text-slate-400 text-xs mt-1">{edu.date}</p>
+                  </div>
+                </div>
+
+                <ul className="space-y-2 text-slate-300 text-sm">
+                  {edu.highlights.map((highlight, hIdx) => (
+                    <li key={hIdx} className="flex gap-2">
+                      <span className="text-blue-400">✓</span>
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements Section */}
+      <section className="py-20 px-4 bg-slate-800/50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">Achievements & Extracurriculars</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card className="bg-slate-700/50 border-slate-600 p-6 text-center hover:border-blue-500 transition-all">
+              <Award className="text-blue-400 mx-auto mb-3" size={32} />
+              <h3 className="text-white font-bold mb-2">Hackathon Winner</h3>
+              <p className="text-slate-300 text-sm">Participated in Masai School x10x Edition #3 (2025), contributing to award-winning app prototypes</p>
             </Card>
 
-            <Card className="bg-slate-700/50 border-slate-600 p-6">
-              <h3 className="text-xl font-bold text-white mb-2">Senior Secondary (Class 12th)</h3>
-              <p className="text-blue-400 font-medium mb-2">NIOS | Science Stream</p>
-              <p className="text-slate-400 text-sm">April 2025</p>
+            <Card className="bg-slate-700/50 border-slate-600 p-6 text-center hover:border-blue-500 transition-all">
+              <Github className="text-blue-400 mx-auto mb-3" size={32} />
+              <h3 className="text-white font-bold mb-2">Open Source</h3>
+              <p className="text-slate-300 text-sm">Active in tech communities, contributing to open-source projects and ML integration</p>
+            </Card>
+
+            <Card className="bg-slate-700/50 border-slate-600 p-6 text-center hover:border-blue-500 transition-all">
+              <BookOpen className="text-blue-400 mx-auto mb-3" size={32} />
+              <h3 className="text-white font-bold mb-2">Competitive Programming</h3>
+              <p className="text-slate-300 text-sm">Completed challenges on LeetCode and HackerRank, mastering algorithms and data structures</p>
             </Card>
           </div>
         </div>
