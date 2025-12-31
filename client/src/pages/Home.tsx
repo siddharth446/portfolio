@@ -43,7 +43,7 @@ export default function Home() {
       tech: "Flutter • Appwrite • TMDB API",
       description: "Engineered a full-stack streaming app handling 100,000+ movies/TV shows with AI-driven recommendations and offline downloads.",
       highlights: ["40% load time reduction", "Real-time sync", "500+ simulated users"],
-      link: "https://github.com/siddharth446/movieshub",
+      link: "https://github.com/siddharth446/mymovies",
       color: "from-blue-600 to-cyan-600"
     },
     {
@@ -52,7 +52,7 @@ export default function Home() {
       tech: "Flutter • Grok AI API • MVVM",
       description: "Intelligent chatbot powered by xAI's Grok model with multi-turn context retention and low-latency streaming.",
       highlights: ["99% uptime", "Markdown rendering", "Local history storage"],
-      link: "https://github.com/siddharth446/chatsphere-ai",
+      link: "https://github.com/siddharth446/myai",
       color: "from-purple-600 to-pink-600"
     },
     {
@@ -61,7 +61,7 @@ export default function Home() {
       tech: "Flutter • Google Gemini • Cloudinary",
       description: "Smart photo enhancer with AI processing for upscaling, noise reduction, and smart filters.",
       highlights: ["4x resolution upscaling", "50% faster rendering", "Batch processing"],
-      link: "https://github.com/siddharth446/picshine-ai",
+      link: "https://github.com/siddharth446/remini-ai",
       color: "from-orange-600 to-red-600"
     },
   ];
